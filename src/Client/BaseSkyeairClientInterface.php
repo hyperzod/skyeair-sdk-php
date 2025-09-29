@@ -1,0 +1,23 @@
+<?php
+
+namespace Hyperzod\SkyeairSdkPhp\Client;
+
+/**
+ * Interface for a Skyeair client.
+ */
+interface BaseSkyeairClientInterface
+{
+   /**
+    * Gets the API key used by the client to send requests.
+    *
+    * @return null|string the API key used by the client to send requests
+    */
+   public function getApiKey();
+
+   /**
+    * Gets the base URL for Skyeair's API.
+    *
+    * @return string the base URL for Skyeair's API
+    */
+   public function getApiBase();
+}
