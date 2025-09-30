@@ -8,6 +8,20 @@ namespace Hyperzod\SkyeairSdkPhp\Client;
 interface BaseSkyeairClientInterface
 {
    /**
+    * Gets the organization ID used by the client to send requests.
+    *
+    * @return null|string the organization ID used by the client to send requests
+    */
+   public function getOrganizationId();
+
+   /**
+    * Gets the organization name used by the client to send requests.
+    *
+    * @return null|string the organization name used by the client to send requests
+    */
+   public function getOrganizationName();
+
+   /**
     * Gets the API key used by the client to send requests.
     *
     * @return null|string the API key used by the client to send requests
@@ -21,3 +35,4 @@ interface BaseSkyeairClientInterface
     */
    public function getApiBase();
 }
+   

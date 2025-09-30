@@ -13,7 +13,7 @@ class CoreServiceFactory extends AbstractServiceFactory
      * @var array<string, string>
      */
     private static $classMap = [
-        'client' => SkyeairClientService::class,
+        'skyeairclient' => SkyeairClientService::class,
         'operator' => SkyeairOperatorService::class,
     ];
 
