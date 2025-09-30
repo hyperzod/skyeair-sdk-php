@@ -16,6 +16,6 @@ class SkyeairOperatorService extends AbstractService
     */
    public function getZipCodes(array $params)
    {
-      return $this->request(HttpMethodEnum::POST, 'operator/get-zipcodes', $params);
+      return $this->request(HttpMethodEnum::GET, 'operator/get-zipcodes', $params);
    }
 }
